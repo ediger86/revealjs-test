@@ -16,11 +16,47 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Slide 1</h1><p>Some more text</p>
+				</section>
+				<section>
+					Slide 2
+				</section>
+				<section>
+					<section>
+						Slide 3.1
+					</section>
+					<section>
+						Slide 3.2
+					</section>
+				</section>
+				<section data-auto-animate>
+					<h1>Auto-Animate</h1>
+				</section>
+				<section data-auto-animate>
+					<h1 style="margin-top: 100px; color: red;">Auto-Animate</h1>
+				</section>
+				<section data-auto-animate>
+					<h1 style="margin-top: 50px; color: blue;">Auto-Animate</h1>
+				</section>
+				<section data-auto-animate>
+					<div style="border-radius: 200px; background: red; width: 400px; height: 400px; margin: 0 auto;" data-id="ani-box"><p>Circle</p></div>
+				</section>
+				<section data-auto-animate>
+					<div style="border-radius: 0; background: green; width: 400px; height: 400px; margin: 0 auto;" data-id="ani-box">
+						<p>Square</p>
+						<p style="text-decoration: line-through">Circle</p>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<div style="border-radius: 0; background: blue; width: 800px; height: 400px; margin: 0 auto;" data-id="ani-box">
+						<p>Rectangle</p>
+						<p style="text-decoration: line-through">Square</p>
+						<p style="text-decoration: line-through">Circle</p>
+					</div>
+				</section>
 			</div>
 		</div>
-
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
